@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Roboto&display=swap');
+a {
+    color: grey;
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+    text-decoration: underline;
+}
+a:active{
+    color:blue;
+}
+a:visited{
+    color:rgb(172, 0, 172);
+}
+body{
+    background: #EDEAE5;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    margin:auto;
+    max-width:600px;
+    margin-top:20px;
+}
+.pfp{
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius:4%;
+    max-width:200px;
+}
+.desc p{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.pages{
+    margin:10px 0px;
+    text-align: center;
+}
+.card{
+    padding:30px;
+    border-radius: 15px;
+    margin:10px 0px;
+}
+
+.heading{
+    margin:0;
+    margin-bottom: 5px;
+}
+.hobbies{
+    background: #fce181;
+    text-align: center;
+}
+.hobbies ol{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+.hobbies ol li{
+    padding:5px 0px;
+}
+.hobbies ol li:hover{
+    color:darkblue;
+}
+.hobbies ol li:last-child:hover{
+    cursor: help;
+}
+.experience{
+    background-color: #fef9c7;
+    text-align: center;
+}
+.experience th{
+    border-bottom: 1px dashed black;
+}
+.experience td:hover{
+    background: rgb(247, 97, 42);
+}
+.experience tr:nth-child(even){
+    opacity: .8;
+}
+.table{
+    width:100%;
+}
+.feedback{
+    background-color: #9fedd7;;
+    text-align:center;
+}
+.lines{
+   padding:5px 0;
+}
+.feedback label{
+    margin-right: 3px;
+}
+.feedback textarea{
+    margin-top:5px;
+}
+.btn{
+    font-family: inherit;
+    background:black;
+    color:white;
+    padding:10px;
+    border:none;
+    border: radius 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity:.8;
+}
+.btn:active{
+    color:bisque;
+}
