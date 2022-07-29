@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Roboto&display=swap');
+
 a {
     color: grey;
     text-decoration: none;
@@ -22,40 +23,46 @@ body{
     max-width:600px;
     margin-top:20px;
 }
+
 .pfp{
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
     border-radius:4%;
-    max-width:200px;
+    width:35%;
+    display: inline-block;
+}
+.desc{
+    width: 60%;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    
 }
 .desc p{
     color: rgba(0, 0, 0, 0.5);
-    text-align: center;
+    margin:10px 0;
 }
-.pages{
-    margin:10px 0px;
-    text-align: center;
-}
+
 .card{
     padding:30px;
     border-radius: 15px;
     margin:10px 0px;
 }
-
 .heading{
     margin:0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
+
 .hobbies{
     background: #fce181;
-    text-align: center;
 }
 .hobbies ol{
     padding:0;
-    margin:0;
-    list-style: none;
+    margin:0 15px;
 }
 .hobbies ol li{
-    padding:5px 0px;
+    padding:5px 0;
+    opacity: .8;
 }
 .hobbies ol li:hover{
     color:darkblue;
@@ -63,34 +70,53 @@ body{
 .hobbies ol li:last-child:hover{
     cursor: help;
 }
+
 .experience{
     background-color: #fef9c7;
-    text-align: center;
-}
-.experience th{
-    border-bottom: 1px dashed black;
+    opacity: .8;
 }
 .experience td:hover{
     background: rgb(247, 97, 42);
 }
 .experience tr:nth-child(even){
-    opacity: .8;
+    background:rgb(232, 232, 255);
 }
 .table{
     width:100%;
 }
+
 .feedback{
     background-color: #9fedd7;;
-    text-align:center;
 }
 .lines{
    padding:5px 0;
+   width:49%;
+   box-sizing:border-box;
+   display:inline-block;
+   margin-bottom:10px;
 }
 .feedback label{
-    margin-right: 3px;
+    opacity: .8;
 }
-.feedback textarea{
-    margin-top:5px;
+.feedback textarea, .feedback input{
+    margin-top:10px;
+    border:none;
+    border-bottom:2px solid grey;
+    background:#9fedd7;
+    font-family: inherit;
+    padding:0;
+    font-size: inherit;
+    outline: none;
+}
+#text, #email{
+    width:95%;
+}
+#message{
+    width:100%;
+    height:25%;
+}
+.message{
+    width:100%;
 }
 .btn{
     font-family: inherit;
@@ -106,4 +132,24 @@ body{
 }
 .btn:active{
     color:bisque;
+}
+.test li{
+    border:2px solid gray;
+    width:24%;
+    list-style: none;
+    display: inline-block;
+    box-sizing: border-box;
+}
+@media (max-width:514px){
+    .pfp{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+    .desc{
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+
 }
